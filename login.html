@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Daisy ui link start -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Daisy ui link end -->
+     <!-- font aswem cdn start -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- font aswem cdn end -->
+      <!-- link css -->
+       <link rel="stylesheet" href="./index.css">
+       <!-- google font  --><link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">">
+        
+   </head>
+<body>
+       <section class="w-11/12 mx-auto my-1">
+            <header>
+                <div class="navbar bg-base-100 ">
+                <div class="flex-1 justify-between">
+                  <div class="flex items-center gap-2">
+                     <img class="w-[30px]" src="./src/assets/github-logo.png" alt="githublogo">
+                     <p class="text-[20px] font-semibold">GitHub Issues Tracker</p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                    <input id="search-input" type="text" placeholder="Search" class="input  outline-0  w-24 md:w-auto" />
+                    <div >
+                        <button id="search-btn" class="btn btn-primary text-white">Search</button>
+                    </div>
+                </div>
+                </div>
+            </header>
+       </section>
+
+       <section class="w-11/12 mx-auto my-10">
+                 <main>
+                       <!-- tab container start -->
+                        <div id="tab-container" class="shadow-md p-2 rounded-md bg-white flex gap-2 my-5">TAB CONTAINER.................।।</div>
+                       
+                        <section class="bg-white shadow-md rounded-md p-4 flex justify-between">
+                                    <div class="flex gap-1 items-center">
+                                       <div class="bg-gray-200 rounded-full p-1"> <img src="./src/assets/Aperture.png" alt="picture"></div>
+                                        <div>
+                                          <p id="all-issu"></p>
+                                            <p class="hidden" id="open-issu"></p>
+                                            <p class="hidden" id="close-issu"></p>
+                                            <p class="text-gray-500">Track and manage your project issues</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-5">
+                                        <div class="flex gap-1 items-center">
+                                             <p class="w-2 rounded-full bg-green-700 h-2"></p>
+                                             <p>Open</p>
+                                        </div>
+                                         <div class="flex gap-1 items-center">
+                                             <p class="w-2 rounded-full bg-purple-700 h-2" ></p>
+                                             <p>Close</p>
+                                        </div>
+                                    </div>
+                        </section>
+                        <section id="card-container" class="card-container  my-10 grid grid-cols-3 gap-2">এখানে ৫০ টা কার্ড আছে ...........................</section>
+                        <section id="open-container" class="card-container hidden my-10 grid grid-cols-3 gap-4">এখানে 46 টা কার্ড আছে ...........................</section>
+                        <section id="close-container" class="card-container hidden my-10 grid grid-cols-4 gap-4">এখানে 6টা কার্ড আছে ...........................</section>
+                        <!-- modal section -->
+                         <section id="modal">                                 <!-- Open the modal using ID.showModal() method -->
+                
+                         </section>
+
+                
+                 </main>
+       </section>
+       <script src="/src/index.js"></script>
+</body>
+</html>
